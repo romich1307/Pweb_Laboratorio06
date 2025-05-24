@@ -9,4 +9,11 @@ class Alumno(models.Model):
 
     def __str__(self):
         return f"{self.nombre} {self.apellido}"
-# Create your models here.
+    
+class Curso(models.Model):
+    nombre = models.CharField(max_length=100)
+    codigo = models.CharField(max_length=10, unique=True)
+
+    def __str__(self):
+        return self.nombre    
+

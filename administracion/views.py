@@ -1,6 +1,9 @@
 from django.shortcuts import render,redirect
 from .forms import AlumnoForm, CursoForm, NotaAlumnoCursoForm
 
+def index(request):
+    return render(request, 'index.html')
+
 def agregar_alumno(request):
     if request.method == 'POST':
         form = AlumnoForm(request.POST)

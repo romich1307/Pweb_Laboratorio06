@@ -6,14 +6,17 @@
     <link rel="stylesheet" href="{% static 'administracion/styles.css' %}">
 </head>
 <body>
-    <h1>Bienvenido al registrador de UNSA </h1>
+    <div class="titulo">
+    <h1 class="titulo">Bienvenido al registrador de notas de la UNSA </h1>
+    </div>
+      <img src="{% static 'administracion/unsa.png' %}" alt="Logo UNSA" class="logo">
     <ul>
-        <li><a href="{% url 'agregar_curso' %}">Agregar Curso</a></li>
-        <li><a href="{% url 'agregar_nota' %}">Agregar notas </a></li>
-        <li><a href="{% url 'agregar_alumno' %}">Agregar Alumno</a></li>
+        <li><a href="{% url 'agregar_curso' %}"  class="ir">Agregar Curso</a></li>
+        <li><a href="{% url 'agregar_nota' %}"  class="ir">Agregar notas </a></li>
+        <li><a href="{% url 'agregar_alumno' %}"  class="ir">Agregar Alumno</a></li>
     </ul>
 </body>
 <footer>
-    <p>&copy; 2025 UNSA</p>
+    <p>&copy; 2025 UNSA @autores:Romina Camargo, Paola Mayta</p>
 </footer>
 </html>

@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="{% static 'administracion/styles.css' %}">
 </head>
 <body>
-     <a href="{% url 'index' %}">Volver al Inicio</a>
+     <a href="{% url 'index' %}"  class="ir">Volver al Inicio</a>
     <h1>Agregar Alumno</h1>
     <form method="post">
         {% csrf_token %}
@@ -15,6 +15,6 @@
     </form>
 </body>
 <footer>
-    <p>&copy; 2025 UNSA</p>
+    <p>&copy; 2025 UNSA @autores:Romina Camargo, Paola Mayta </p>
 </footer>
 </html>

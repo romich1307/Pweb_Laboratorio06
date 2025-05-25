@@ -93,9 +93,6 @@ footer {
     color: #fff;
     text-align: center;
     padding: 18px 0 12px 0;
-    position: fixed;
-    left: 0;
-    bottom: 0;
     width: 100%;
     font-size: 16px;
     letter-spacing: 1px;
@@ -127,4 +124,11 @@ footer p {
     width: 320px;   
     height: auto;
     border-radius: 200px;
+}
+.logo1 {
+    display: block;
+    margin: 20px auto;
+    width: 300px;   
+    height: auto;
+    border-radius: 20px;
 }

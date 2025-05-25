@@ -8,6 +8,7 @@
 <body>
      <a href="{% url 'index' %}"  class="ir">Volver al Inicio</a>
     <h1>Agregar Nota</h1>
+    <img src="{% static 'administracion/nota.png' %}" alt="Logo UNSA" class="logo1">
     <form method="post">
         {% csrf_token %}
         {{ form.as_p }}
